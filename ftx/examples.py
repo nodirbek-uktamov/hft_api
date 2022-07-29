@@ -1,19 +1,42 @@
 from ftx import FTX
 
-ftx = FTX('', '')
+ftx = FTX('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 
-ftx.get_positions()  # Get positions list
-ftx.get_account_information()  # Get account information
-ftx.get_balances()  # Get account balances list
-ftx.get_open_orders()  # Get all open orders
-ftx.get_open_orders("ETH-PERP")  # Get all open orders for "ETH-PERP"
-ftx.get_orders_history()  # Get orders history
-ftx.get_orders_history("ETH-PERP")  # Get orders history for "ETH-PERP"
-ftx.get_trigger_orders()  # Get open trigger orders
-ftx.get_trigger_orders("ETH-PERP")  # Get open trigger orders for "ETH-PERP"
-ftx.get_twap_orders()  # Get all twap orders
-ftx.get_twap_orders("ETH-PERP")  # Get all twap orders for "ETH-PERP"
-ftx.get_twap_orders("ETH-PERP", "running")  # Get all active twap orders for "ETH-PERP"
+# Get positions list
+ftx.get_positions()
+
+# Get account information
+ftx.get_account_information()
+
+# Get account balances list
+ftx.get_balances()
+
+# Get all open orders
+ftx.get_open_orders()
+
+# Get all open orders for "ETH-PERP"
+ftx.get_open_orders("ETH-PERP")
+
+# Get orders history
+ftx.get_orders_history()
+
+# Get orders history for "ETH-PERP"
+ftx.get_orders_history("ETH-PERP")
+
+# Get open trigger orders
+ftx.get_trigger_orders()
+
+# Get open trigger orders for "ETH-PERP"
+ftx.get_trigger_orders("ETH-PERP")
+
+# Get all twap orders
+ftx.get_twap_orders()
+
+# Get all twap orders for "ETH-PERP"
+ftx.get_twap_orders("ETH-PERP")
+
+# Get all active twap orders for "ETH-PERP"
+ftx.get_twap_orders("ETH-PERP", "running")
 
 # Place limit order
 ftx.place_order(
@@ -61,7 +84,7 @@ ftx.place_trigger_order(
     triggerPrice=10000,
 )
 
-
+# Place twap order
 ftx.place_twap_order(
     market="ETH/USDT",
     durationSeconds=600,
