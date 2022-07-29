@@ -10,6 +10,12 @@ if accounts.get('status') == 'ok':
 
     ftx.change_account_id(spot_account.get('id'))
 
+# Get open orders
+open_orders = ftx.get_open_orders()
+
+# Cancel order by id
+cancel_response = ftx.cancel_order('596827573398451')
+
 # Get symbols list
 symbols = ftx.get_symbols()
 
