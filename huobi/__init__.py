@@ -100,6 +100,12 @@ class Huobi:
     def get_balances(self):
         return self.request('GET', f'/v1/account/accounts/{self.account_id}/balance')
 
+    def get_open_orders(self):
+        return self.request('GET', '/v1/order/openOrders')
+
+    def cancel_order(self, order_id):
+        return self.request('POST', f'/v1/order/orders/{order_id}/submitcancel')
+
     def place_order(
             self,
             symbol: str,
