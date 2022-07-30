@@ -1,6 +1,6 @@
 from huobi import Huobi
 
-ftx = Huobi('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+huobi = Huobi('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 
 # Get all accounts list
 accounts = ftx.get_accounts()
