@@ -1,5 +1,4 @@
 from ftx import FTX
-
 ftx = FTX('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 
 # Get positions list
