@@ -1,9 +1,10 @@
-# Exchanges
-A small library for apis of huobi and ftx.
+# A small library for apis of huobi and ftx.
+
 
 ### Installation
 ```
-pip install 
+pip install hft-api
+
 ```
 
 ### Get started
